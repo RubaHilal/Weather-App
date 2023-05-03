@@ -82,10 +82,11 @@ body {
 	list-style: none;
 }
 
-.Weather li strong {
+.Weather strong {
 	color: #fdc67e;
 	font-weight: normal;
 }
+
 
 .Weather .temperature {
 	font-weight: bold;
