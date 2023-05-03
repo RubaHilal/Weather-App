@@ -136,12 +136,11 @@ body {
 	text-align: center;
 	color: rgba(39, 33, 66, 0.4);
 }
-
 .WeatherForecast .forecast-temperature {
 	font-style: normal;
 	font-size: 18px;
 	line-height: 1.5;
-	color: #fdc67e;
+	color: rgba(39, 33, 66, 0.4);
 	font-weight: bold;
 }
 
@@ -161,4 +160,13 @@ body {
 .WeatherInfo .temperature-container {
 	margin-top: 30px;
 	align-items: center;
+}
+
+.fa-solid {
+	font-size: xx-large;
+	color: #fdc67e;
+}
+
+.mainIcon {
+	font-size: 60px;
 }
