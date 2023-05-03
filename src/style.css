@@ -87,7 +87,6 @@ body {
 	font-weight: normal;
 }
 
-
 .Weather .temperature {
 	font-weight: bold;
 	color: #79787d;
@@ -170,4 +169,8 @@ body {
 
 .mainIcon {
 	font-size: 60px;
+}
+.description {
+	color: #fdc67e;
+	text-transform: capitalize;
 }
