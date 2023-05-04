@@ -102,14 +102,15 @@ body {
 	margin: 10px 0;
 }
 
-.Weather .unit {
-	color: rgb(33, 33, 33);
+.WeatherInfo .units {
+	color: #fdc67e;
 	font-size: 28px;
 	line-height: 36px;
 	font-weight: normal;
 	position: relative;
 	line-height: 1;
 	top: -34px;
+	text-decoration: none;
 }
 
 .Weather footer {
@@ -120,7 +121,19 @@ body {
 	color: rgba(39, 33, 66, 0.4);
 }
 
+[aria-current="page"] {
+	cursor: default;
+	text-decoration: none;
+	color: #fdc67e;
+}
 .Weather footer a {
+	color: #fdc67e;
+}
+.Weather .units {
+	font-size: 20 px;
+	margin-top: 40px;
+	line-height: 18px;
+	text-align: center;
 	color: #fdc67e;
 }
 .WeatherForecast {
@@ -160,6 +173,7 @@ body {
 .WeatherInfo .temperature-container {
 	margin-top: 30px;
 	align-items: center;
+	text-decoration: none;
 }
 
 .fa-solid {
@@ -173,4 +187,12 @@ body {
 .description {
 	color: #fdc67e;
 	text-transform: capitalize;
+}
+.active {
+	color: #79787d;
+	text-decoration: none;
+	cursor: default;
+}
+.active:hover {
+	text-decoration: none;
 }
