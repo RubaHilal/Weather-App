@@ -121,11 +121,6 @@ body {
 	color: rgba(39, 33, 66, 0.4);
 }
 
-[aria-current="page"] {
-	cursor: default;
-	text-decoration: none;
-	color: #fdc67e;
-}
 .Weather footer a {
 	color: #fdc67e;
 }
@@ -158,14 +153,6 @@ body {
 .description {
 	color: #fdc67e;
 	text-transform: capitalize;
-}
-.active {
-	color: #79787d;
-	text-decoration: none;
-	cursor: default;
-}
-.active:hover {
-	text-decoration: none;
 }
 .WeatherForecast {
 	text-align: center;
