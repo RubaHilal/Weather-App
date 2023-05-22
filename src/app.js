@@ -23,6 +23,27 @@ function formatDate(timestamp) {
 
 function displayForecast() {
 	let forecastElement = document.querySelector("#forecast");
+	let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+	let forecastHTML = `<div class="row">`;
+	days.forEach(function (day) {
+		forecastHTML =
+			forecastHTML +
+			`<div class="col">
+                                <div class="WeatherForecastPreview">
+                                    <div class="forecast-time">${day}</div><canvas width="20" height="10"></canvas>
+                                    <i class="fa-solid fa-temperature-arrow-down"></i>
+                                    <div class="forecast-temperature"><span
+                                            class="forecast-temperature-max">13°</span><span
+                                            class="forecast-temperature-min">10°</span></div>
+											</div>
+											</div>
+  `;
+	});
+
+	forecastHTML = forecastHTML + `</div>`;
+	forecastElement.innerHTML = forecastHTML;
+	console.log(forecastHTML);
 }
 function displayTemperature(response) {
 	let currentTemperature = document.querySelector("#temperature");
@@ -85,3 +106,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 search("San Francisco");
+displayForecast();
